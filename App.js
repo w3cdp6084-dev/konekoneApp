@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Text style={styles.ptofileList}>1985 Works as a freelance.</Text>
         <Text style={styles.profileTitle}>Works.</Text>
         <Text style={styles.ptofileList}>I was designing and developing at a service company and a production company.</Text>
+        <Icon name="home" size={50}/>
         <StatusBar style="auto" />
       </Text>
     </View>
