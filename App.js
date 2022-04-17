@@ -10,6 +10,12 @@ export default function App() {
           source={require('./assets/brand_logo.png')}
           style={{ width: 200, height: 205 }}
         />
+        <Text style={styles.profileTitle}>Bio.</Text>
+        <Text style={styles.ptofileList}>1985 Born in Osaka. Japan.</Text>
+        <Text style={styles.ptofileList}>2010 Designer/Developer. début.</Text>
+        <Text style={styles.ptofileList}>1985 Works as a freelance.</Text>
+        <Text style={styles.profileTitle}>Works.</Text>
+        <Text style={styles.ptofileList}>I was designing and developing at a service company and a production company.</Text>
         <StatusBar style="auto" />
       </Text>
     </View>
@@ -24,10 +30,20 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   baseText: {
-    fontFamily: "Proxima Nova"
+    fontFamily: "Proxima Nova",
+    color: '#515151'
   },
   mainTitle: {
+    fontSize: 24,
+    fontWeight: "bold"
+  },
+  profileTitle:{
     fontSize: 20,
     fontWeight: "bold"
   },
+  ptofileList:{
+    fontSize: 16,
+    fontWeight: "normal"
+  }
+
 });
