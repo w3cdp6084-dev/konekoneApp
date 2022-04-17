@@ -4,8 +4,10 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>KONEKONE</Text>
-      <StatusBar style="auto" />
+      <Text style={styles.baseText}>
+        <Text style={styles.mainTitle}>KONEKONE</Text>
+        <StatusBar style="auto" />
+      </Text>
     </View>
   );
 }
@@ -13,8 +15,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#EDF2F7',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  baseText: {
+    fontFamily: "Proxima Nova"
+  },
+  mainTitle: {
+    fontSize: 20,
+    fontWeight: "bold"
   },
 });
