@@ -8,7 +8,7 @@ export default function About() {
         <Text style={styles.baseText}>
           <Text style={styles.mainTitle}>KONEKONE</Text>
           <Image 
-            source={require('./assets/brand_logo.png')}
+            source={require('../assets/brand_logo.png')}
             style={{ width: 200, height: 205 }}
           />
           <Icon name="twitter" size={50}/>
