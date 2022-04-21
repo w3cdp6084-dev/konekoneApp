@@ -15,9 +15,11 @@
     "expo": "~44.0.0",
     "expo-cli": "^5.3.1",
     "expo-status-bar": "~1.2.0",
+    "font-awesome5": "^1.0.5",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
+    "react-native-paper": "^4.12.0",
     "react-native-safe-area-context": "^4.2.4",
     "react-native-screens": "^3.13.1",
     "react-native-vector-icons": "^9.1.0",
@@ -25,7 +27,10 @@
     "react-navigation-tabs": "^2.11.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "@types/react": "~17.0.21",
+    "@types/react-native": "^0.67.4",
+    "typescript": "^4.6.3"
   },
   "private": true
 }

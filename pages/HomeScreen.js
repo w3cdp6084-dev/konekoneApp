@@ -1,10 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 export default function Home() {
   return (
     <View style={styles.container}>
+      <View>
+        <Icon name="sun" size={50}/>
+      </View>
       <Text style={styles.baseText}>
         <Text style={styles.mainTitle}>KONEKONE</Text>
         <Image 
