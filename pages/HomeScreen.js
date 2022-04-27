@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, InteractionManager } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
 export default function Home() {
@@ -10,10 +10,14 @@ export default function Home() {
       </View>
       <Text style={styles.baseText}>
         <Text style={styles.mainTitle}>KONEKONE</Text>
-        <Image 
-          source={require('../assets/brand_logo.png')}
-          style={{ width: 200, height: 205 }}
-        />
+        <View style={styles.imageOuter}>
+        <View style={styles.imageInner}>
+          <Image 
+            source={require('../assets/brand_logo.png')}
+            style={ styles.logoImage }
+          />
+        </View>
+        </View>
         <Text style={styles.profileTitle}>Bio.</Text>
         <Text style={styles.ptofileList}>1985 Born in Osaka. Japan.</Text>
         <Text style={styles.ptofileList}>2010 Designer/Developer. début.</Text>
@@ -40,7 +44,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   baseText: {
-    fontFamily: "Proxima Nova",
     color: '#515151'
   },
   mainTitle: {
@@ -58,6 +61,32 @@ const styles = StyleSheet.create({
   icon: {
     borderRadius: 12,
     padding: 11,
-  }
+  },
+  imageOuter: {
+    backgroundColor: '#EDF2F7',
+    shadowColor:'#ffffff',
+    borderRadius: 200,
+    shadowOffset: {width: 6, height: 6},
+    shadowColor: '#FFFFFF',
+    shadowOpacity: 0.08,
+    shadowRadius: 5,
+    width:320,
+    height:320,
+  },
+  imageInner: {
+    width:300,
+    height:300,
+    backgroundColor: '#EDF2F7',
+    borderRadius: 200,
+    shadowOffset: {width: -12, height: -12},
+    shadowColor: '#000000',
+    shadowOpacity: 0.1,
+    shadowRadius: 50,
+  },
+  logoImage: {
+    width: 200,
+    height: 205,
+    padding: 0,
+  },
 
 });

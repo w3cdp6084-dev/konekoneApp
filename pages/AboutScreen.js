@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     },
     baseText: {
-      fontFamily: "Proxima Nova",
+
       color: '#515151'
     },
     mainTitle: {
