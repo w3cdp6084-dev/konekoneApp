@@ -9,7 +9,6 @@ const Stack = createNativeStackNavigator();
 
 function App() {
   return (
-    
     <NavigationContainer theme={DarkTheme}>
       <Stack.Navigator initialRouteName='Home'>
         <Stack.Screen name="Home" component={HomeScreen} />
