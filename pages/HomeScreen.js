@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, InteractionManager } from 'react-native';
+import { ScrollView, StyleSheet, Text, View, Image, InteractionManager } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
 export default function Home() {
   return (
+    <ScrollView>
     <View style={styles.contaIner}>
 
       <View style={styles.boxContentHead}>
@@ -18,27 +19,31 @@ export default function Home() {
 
       </View>
 
-
-
-
-        {/* <Text style={styles.baseText}>
-          
-          <View style={styles.imageOuter}>
-            <View style={styles.imageInner}>
-              <Image 
+      <View style={styles.boxContentImage}>
+        <View style={styles.imageOuter}>
+          <View style={styles.imageInner}>
+            <Image 
                 source={require('../assets/brand_logo.png')}
                 style={ styles.logoImage }
-              />
-            </View>
+            />
           </View>
-        </Text>
+        </View>
+      </View>
+
+      <View style={styles.boxContentLine}>
         <Text style={styles.profileTitle}>Bio.</Text>
         <Text style={styles.ptofileList}>1985 Born in Osaka. Japan.</Text>
         <Text style={styles.ptofileList}>2010 Designer/Developer. début.</Text>
         <Text style={styles.ptofileList}>2020 Works as a freelance.</Text>
+      </View>
+
+      <View style={styles.boxContentLine}>
         <Text style={styles.profileTitle}>Works.</Text>
         <Text style={styles.ptofileList}>I was designing and developing at a service company and a production company.</Text>
-        <View style={styles.iconOuter}>
+      </View>
+      
+      
+        <View style={styles.boxContentIcon}>
           <View style={styles.icon}>
             <Icon name="home" size={22}/>
           </View>
@@ -46,8 +51,9 @@ export default function Home() {
             <Icon name="user" size={22}/>
           </View>
         </View>
-        <StatusBar style="auto" /> */}
+        <StatusBar style="auto" />
       </View>
+      </ScrollView>
   );
 }
 
@@ -59,7 +65,6 @@ const styles = StyleSheet.create({
   },
   boxContentHead:{
     width:'100%',
-
     flexDirection:'row', 
     backgroundColor: '#ff0000',
     alignItems: 'center',
@@ -67,7 +72,25 @@ const styles = StyleSheet.create({
     marginTop: 16,
     marginBottom:24,
   },
-  
+  boxContentImage:{
+    width:'100%',
+    flexDirection:'row', 
+    backgroundColor: '#fff000',
+  },
+
+  boxContentLine:{
+    width:'100%',
+    backgroundColor: '#dd0000',
+  },
+  boxContentIcon:{
+
+  },
+
+
+
+
+
+
   mainTitle: {
     fontSize: 24,
     fontWeight: "bold",
