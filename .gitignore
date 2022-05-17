@@ -10,6 +10,6 @@ npm-debug.*
 *.orig.*
 web-build/
 .vscode
-
+.bash_profile
 # macOS
 .DS_Store
